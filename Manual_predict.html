@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Electric Motor Temperature Prediction</title>
+</head>
+
+<body style="text-align:center; font-family:Arial;">
+
+<h1>Electric Motor Temperature Prediction</h1>
+
+<form action="/y_predict" method="post">
+
+<input type="text" name="ambient" placeholder="Ambient" required><br><br>
+
+<input type="text" name="coolant" placeholder="Coolant" required><br><br>
+
+<input type="text" name="u_d" placeholder="u_d" required><br><br>
+
+<input type="text" name="u_q" placeholder="u_q" required><br><br>
+
+<input type="text" name="motor_speed" placeholder="Motor Speed" required><br><br>
+
+<input type="text" name="i_d" placeholder="i_d" required><br><br>
+
+<input type="text" name="i_q" placeholder="i_q" required><br><br>
+
+<input type="text" name="stator_yoke" placeholder="Stator Yoke" required><br><br>
+
+<input type="text" name="stator_tooth" placeholder="Stator Tooth" required><br><br>
+
+<input type="text" name="stator_winding" placeholder="Stator Winding" required><br><br>
+
+<button type="submit">Predict</button>
+
+</form>
+
+<h2>{{ prediction_text }}</h2>
+
+</body>
+</html>
