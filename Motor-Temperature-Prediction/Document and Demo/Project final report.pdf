@@ -1,0 +1,276 @@
+PROJECT REPORT
+Project Title
+Electric Motor Temperature Prediction using Machine Learning
+
+TEAM ID
+LTVIP2026TMIDS73974
+
+Submitted By
+T MEGHANA
+                                             KANURU SETHU MADHAV
+                                                     PAMIDI KAVYA
+                                                       P UHALATHA
+
+
+Institution
+Sri Venkateswara College of Engineering
+Department of Computer Science Engineering
+
+Submitted To
+SmartInternz – AI/ML Virtual Internship Program 2026
+
+
+
+
+
+
+
+
+
+
+1. Introduction
+1.1 Project Overview
+This project focuses on predicting the temperature of an electric motor using machine learning techniques. Electric motors are widely used in industrial systems, electric vehicles, and manufacturing equipment. Monitoring motor temperature is crucial because excessive heat can lead to reduced efficiency, component damage, and system failure.
+In this project, a machine learning model is developed to predict the temperature of a motor’s permanent magnet surface using various operational parameters such as voltage, torque, speed, and current.
+The system analyzes sensor data collected from motors and uses regression algorithms to estimate temperature in real time. By converting raw sensor data into meaningful predictions, the system helps identify overheating risks early and supports predictive maintenance.
+Key objectives include:
+* Predict motor temperature using machine learning models.
+* Analyze relationships between motor operational features and temperature.
+* Identify patterns indicating overheating conditions.
+* Deploy a model that can provide real-time predictions through a web interface.
+
+1.2 Purpose
+The purpose of this project is to develop a predictive system that can estimate motor temperature using machine learning models.
+Instead of relying only on traditional monitoring methods, this system leverages historical sensor data to detect patterns and predict future temperature values.
+This approach helps:
+* Engineers monitor motor performance.
+* Prevent overheating and equipment failure.
+* Improve predictive maintenance strategies.
+* Reduce maintenance costs and downtime.
+
+2. Ideation Phase
+2.1 Problem Statement
+Electric motors play a critical role in many industrial systems and machines. However, excessive temperature can reduce motor efficiency, damage components, and lead to system failure.
+Traditional monitoring methods rely on threshold-based alarms that react only after overheating occurs. This reactive approach may lead to delayed intervention and costly failures.
+This project aims to develop a machine learning model that predicts motor temperature based on sensor data such as speed, torque, voltage, and current. The system will analyze historical data to identify patterns and predict temperature in advance, enabling proactive monitoring and predictive maintenance.
+
+2.2 Empathy Map Canvas
+1. WHO are we empathizing with?
+* Industrial engineers
+* Maintenance teams
+* Manufacturing plant operators
+* Electric vehicle system engineers
+2. What do they SAY?
+* “We need to monitor motor temperature continuously.”
+* “Unexpected motor failures cause production delays.”
+* “We want early warnings before overheating occurs.”
+3. What do they THINK?
+* “Can we predict motor failure before it happens?”
+* “Are there hidden patterns in sensor data?”
+* “Can AI help optimize motor performance?”
+4. What do they DO?
+* Monitor motor sensors manually
+* Perform scheduled maintenance
+* Analyze equipment logs
+* Use temperature alarms
+5. What do they FEEL?
+* Concerned about equipment reliability
+* Stressed about unexpected downtime
+* Interested in smarter monitoring systems
+6. What are their PAIN points?
+* Late detection of overheating
+* High maintenance costs
+* Lack of predictive insights
+7. What are their GAINS?
+* Early fault detection
+* Reduced equipment downtime
+* Improved operational efficiency
+
+2.3 Brainstorming
+Key Objectives
+1. Identify factors influencing motor temperature.
+2. Predict motor temperature using machine learning models.
+3. Compare performance of different regression algorithms.
+4. Detect potential overheating conditions.
+5. Build a real-time prediction interface.
+
+Possible Visualizations
+Chart TypePurposeScatter PlotRelationship between torque and temperatureLine ChartTemperature trends over timeCorrelation HeatmapFeature relationshipsFeature Importance ChartIdentify important variables
+Analytical Questions
+* Which sensor variables most affect motor temperature?
+* Does motor speed influence temperature significantly?
+* How does torque impact temperature rise?
+* Can machine learning predict temperature accurately?
+
+3. Requirement Analysis
+3.1 Customer Journey Map
+This map describes the journey of engineers or operators using the system.
+StageUser ActionUser ThoughtsEmotionsOpportunitiesAwarenessRecognizes overheating issues“We need better monitoring”ConcernedIntroduce predictive modelDiscoveryFinds ML solution“This can predict temperature?”CuriousProvide clear dashboardEngagementInputs motor data“Let's test the prediction”InterestedSimple UIAnalysisReviews predictions“This helps detect overheating”ConfidentDetailed insightsDecisionTakes maintenance action“We avoided failure”RelievedPredictive maintenanceFeedbackShares tool with team“This is useful”SatisfiedExpand system
+3.2 Solution Requirements
+Functional Requirements
+* Import motor sensor dataset
+* Perform data preprocessing
+* Train regression models
+* Evaluate model performance
+* Deploy prediction system
+* Allow users to input motor parameters
+* Display predicted temperature
+
+Non-Functional Requirements
+* Prediction response time < 3 seconds
+* Simple web interface
+* Accurate prediction model
+* Scalable for new data
+
+Data Requirements
+Dataset includes:
+* Motor speed
+* Torque
+* Voltage
+* Current
+* Ambient temperature
+* Motor temperature (target variable)
+
+Technical Requirements
+* Python
+* Scikit-learn
+* Pandas
+* NumPy
+* Flask
+* Jupyter Notebook
+
+3.3 Data Flow Diagram (DFD)
+Motor Sensor Data
+      ?
+Data Cleaning & Preprocessing
+      ?
+Machine Learning Model Training
+      ?
+Model Evaluation
+      ?
+Trained Model Deployment (Flask)
+      ?
+User Input
+      ?
+Temperature Prediction
+      ?
+Displayed Result
+
+3.4 Technology Stack
+Data Processing
+* Python
+* Pandas
+* NumPy
+Machine Learning
+* Scikit-learn
+* Linear Regression
+* Decision Tree Regressor
+* Random Forest Regressor
+* Support Vector Regressor
+Visualization
+* Matplotlib
+* Seaborn
+Deployment
+* Flask
+* HTML Interface
+Development Environment
+* Jupyter Notebook
+* VS Code
+
+4. Project Design
+4.1 Problem-Solution Fit
+The Problem
+Motor overheating can cause equipment failure and reduced efficiency.
+Traditional monitoring systems detect problems only after temperatures exceed safe limits.
+The Solution
+A machine learning system that:
+* analyzes sensor data
+* predicts temperature before overheating occurs
+* helps engineers take preventive action
+
+4.2 Proposed Solution
+1. Data Collection
+Motor sensor dataset containing operational parameters.
+2. Data Preprocessing
+* Handle missing values
+* Normalize features
+* Feature selection
+3. Model Development
+Test multiple algorithms:
+* Linear Regression
+* Decision Tree
+* Random Forest
+* Support Vector Regression
+4. Model Evaluation
+Metrics used:
+* RMSE
+* R? Score
+5. Deployment
+Model deployed using Flask for real-time predictions.
+
+4.3 Solution Architecture
+Motor Sensor Dataset
+        ?
+Data Preprocessing
+        ?
+Feature Engineering
+        ?
+Machine Learning Models
+        ?
+Model Evaluation
+        ?
+Best Model Selection
+        ?
+Flask Web Application
+        ?
+User Interface for Predictions
+
+5. Project Planning
+Week 1
+Project research and problem definition.
+Week 2
+Dataset collection and preprocessing.
+Week 3
+Model training using regression algorithms.
+Week 4
+Model evaluation and comparison.
+Week 5
+Flask deployment and interface development.
+Week 6
+Testing and final documentation.
+
+6. Functional and Performance Testing
+Functional Testing
+* Model predictions are accurate.
+* Input values are processed correctly.
+* Web interface displays predictions.
+* System handles different input values.
+
+Performance Testing
+* Prediction time < 3 seconds
+* Model accuracy validated
+* System handles repeated requests
+
+7. Results
+The machine learning model successfully predicts motor temperature using operational sensor data.
+Key observations:
+* Motor speed and torque significantly influence temperature.
+* Random Forest regression produced the most accurate predictions.
+* The deployed Flask application allows users to input parameters and receive real-time temperature predictions.
+The system demonstrates how machine learning can assist in predictive maintenance and industrial monitoring.
+
+8. Conclusion
+The project Electric Motor Temperature Prediction using Machine Learning demonstrates how AI techniques can be applied to industrial monitoring systems.
+By analyzing sensor data and training regression models, the system can accurately predict motor temperature and identify potential overheating risks.
+The project followed a structured machine learning workflow including data preprocessing, model training, evaluation, and deployment.
+The final system provides an accessible interface where users can input motor parameters and receive real-time temperature predictions.
+This solution highlights the importance of predictive analytics in improving equipment reliability, reducing downtime, and enabling smarter maintenance strategies.
+Future improvements may include:
+* integrating real-time IoT sensor data
+* deploying the system on cloud platforms
+* implementing deep learning models for enhanced prediction accuracy.
+
+Top of Form
+
+Bottom of Form
+
