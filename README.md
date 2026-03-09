@@ -21,8 +21,6 @@ Decision Tree model achieved the best accuracy and was deployed using Flask.
 1. Install requirements
 2. Run:
    python app.py
-3. Open browser:
-   http://127.0.0.1:5002
-
+3. Open browser
 ## Output
 Predicts Permanent Magnet Surface Temperature of Electric Motor.
